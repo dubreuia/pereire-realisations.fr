@@ -77,8 +77,8 @@ a {
 
 #home .information {
     bottom: 75px;
-    margin: 25px;
-    padding: 25px;
+    margin: 20px 30px;
+    padding: 20px 30px;
     position: absolute;
     right: 50px;
     text-align: left;
@@ -100,6 +100,16 @@ a {
     color: #c62828;
     margin: 15px 0;
     font-size: 150%;
+}
+
+#home .information .mail {
+    margin: 15px 0;
+}
+
+#home .information .mail a {
+    color: #c62828;
+    font-size: 150%;
+    font-weight: bold;
 }
 
 #home .information .address {
