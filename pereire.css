@@ -1,0 +1,144 @@
+body {
+    color: #333;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+body,
+body a {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.001);
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+    outline: none;
+}
+
+.frame {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 0;
+}
+
+.frame .scroll {
+    height: 100%;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.frame .scroll .page {
+    background-color: #ddd;
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+}
+
+#home {
+    background-image: url('pattern.png');
+    background-repeat: repeat;
+}
+
+#home:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#home .content {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 400px;
+}
+
+#home .content .logo {
+    display: block;
+    margin: 25px auto;
+    padding: 0 25px;
+    width: 400px;
+}
+
+#home {
+    position: relative;
+}
+
+#home .information {
+    bottom: 75px;
+    margin: 25px;
+    padding: 25px;
+    position: absolute;
+    right: 50px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.33);
+    z-index: 1;
+}
+
+#home .information .title {
+    font-size: 300%;
+    margin: 15px 0;
+}
+
+#home .information .subtitle {
+    font-size: 200%;
+    margin: 10px 0;
+}
+
+#home .information .number {
+    color: #c62828;
+    margin: 15px 0;
+    font-size: 150%;
+}
+
+#home .information .address {
+    font-size: 125%;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 900px) {
+    #home {
+        text-align: left;
+    }
+    #home .information {
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #home .information {
+        right: 0;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    #home .information {
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #home .content,
+    #home .content .logo {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #home .content,
+    #home .content .logo {
+        width: 300px;
+    }
+}
